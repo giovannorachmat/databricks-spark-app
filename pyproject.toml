@@ -1,0 +1,10 @@
+[project]
+name = "databricks-spark-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyarrow>=25.0.1",
+    "pyspark>=4.2.0",
+]
