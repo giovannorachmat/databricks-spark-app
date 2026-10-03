@@ -5,6 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "pyarrow>=25.0.1",
-    "pyspark>=4.2.0",
+  "databricks-sdk>=0.143.0",
+  "databricks-sql-connector>=4.6.0",
+  "pyarrow>=25.0.1",
+  "pyspark>=4.2.0",
+  "ruff>=0.16.9",
 ]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
